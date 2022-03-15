@@ -1,0 +1,24 @@
+---
+title: "Tranforming Data to Darwin Core"
+author: "Camila Vargas"
+date: "3/14/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+## Read raw data
+
+```{r}
+activity <- read_csv("data/Chlorurus_Activity_Palmyra_2014.csv")
+
+area <- read_csv("data/Chlorurus_Area_Palmyra_2014.csv")
+
+
+fish <- read_csv("data/Fish_Information_Chlorurus_Data_2014.csv")
+```
+
